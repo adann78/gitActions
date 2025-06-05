@@ -4,6 +4,7 @@ on:
 jobs:
     first_job:
         runs-on: ubuntu-latest
+        
         steps:
-            - name: Checkout code
-              run: echo "{{ secrets.SLACK }}"            
+            - name: Print variable
+              run: echo "${{ secrets.SLACK }}"            
