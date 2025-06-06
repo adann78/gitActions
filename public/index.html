@@ -4,11 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Código Facilito</title>
+   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .grid-container {
+      position: absolute;
+      top: 50%; /* Empieza desde la mitad de la pantalla */
+      left: 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+      grid-template-rows: repeat(3, 1fr);    /* 3 filas */
+      gap: 10px;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .grid-item {
+      background-color: #007acc;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.2em;
+      height: 100px;
+    }
+  </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-gray-100">
   <h1 class="text-4xl font-bold text-center text-gray-800">
     Bootcamp de GitHub Action en Código Facilito
   </h1>
+   <div class="grid-container">
+    <div class="grid-item">Python</div>
+    <div class="grid-item">JavaScript</div>
+    <div class="grid-item">Java</div>
+    <div class="grid-item">C#</div>
+    <div class="grid-item">C++</div>
+    <div class="grid-item">Ruby</div>
+    <div class="grid-item">Go</div>
+    <div class="grid-item">PHP</div>
+    <div class="grid-item">Swift</div>
+    <div class="grid-item">Kotlin</div>
+    <div class="grid-item">TypeScript</div>
+    <div class="grid-item">Rust</div>
+    <div class="grid-item">Perl</div>
+    <div class="grid-item">Scala</div>
+    <div class="grid-item">Dart</div>
 </body>
 </html>
